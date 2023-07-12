@@ -4,31 +4,36 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff566529e8a8d976e117c6238f3679dc",
+    "content-hash": "dc07f6e46c8dbc70b1554c0822da4b8e",
     "packages": [
         {
             "name": "digitalstars/simplevk",
-            "version": "v2.14.1",
+            "version": "dev-testing",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digitalstars/simplevk.git",
-                "reference": "bd5e0f6e52795006ca33355f8e9c847360dd0b21"
+                "reference": "f59384fcd43886f8fce1aca4bcf5e98c218e16ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digitalstars/simplevk/zipball/bd5e0f6e52795006ca33355f8e9c847360dd0b21",
-                "reference": "bd5e0f6e52795006ca33355f8e9c847360dd0b21",
+                "url": "https://api.github.com/repos/digitalstars/simplevk/zipball/f59384fcd43886f8fce1aca4bcf5e98c218e16ee",
+                "reference": "f59384fcd43886f8fce1aca4bcf5e98c218e16ee",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
+                "ext-fileinfo": "*",
+                "ext-iconv": "*",
                 "ext-json": "*",
-                "php": ">=5.6"
+                "ext-mbstring": "*",
+                "ext-pcntl": "*",
+                "ext-posix": "*",
+                "php": ">=7.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "DigitalStar\\vk_api\\": "src/"
+                    "DigitalStars\\SimpleVK\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -48,9 +53,9 @@
             "description": "Library for easy work with VK com api",
             "support": {
                 "issues": "https://github.com/digitalstars/simplevk/issues",
-                "source": "https://github.com/digitalstars/simplevk/tree/v3.0.0-beta.3"
+                "source": "https://github.com/digitalstars/simplevk/tree/testing"
             },
-            "time": "2021-06-17T10:13:20+00:00"
+            "time": "2023-01-29T17:35:10+00:00"
         },
         {
             "name": "jarne/querylibrary",
@@ -108,7 +113,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "digitalstars/simplevk": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
